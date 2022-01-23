@@ -17,7 +17,7 @@ private:
 
 public:
     
-    Date(int month, int day, int year) {
+    Date(int month=1, int day=1, int year=2022) {
         
         this->setMonth(month);
         this->setDay(day);
