@@ -6,11 +6,14 @@
 //
 
 #include <iostream>
+#include "Date.cpp"
 
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    
+    Date guest1 = Date(2, 3, 2023);
+    
+    cout << guest1.getMonth();
     return 0;
 }
