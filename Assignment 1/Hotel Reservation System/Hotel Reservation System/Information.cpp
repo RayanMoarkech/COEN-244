@@ -21,7 +21,11 @@ private :
     
 public :
     
-    Information (string firstName, string lastName, Date dateOfBirth){
+    Information() {
+        
+    }
+    
+    Information (string firstName , string lastName, Date dateOfBirth){
         
         this->setFirstName(firstName);
         this->setLastName(lastName);
