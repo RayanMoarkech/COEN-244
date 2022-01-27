@@ -41,7 +41,7 @@ public:
         return this->checkOutDate;
     }
     
-    Information getInfo(){
+    Information* getInfo(){
         
         return this->info;
     
@@ -52,12 +52,35 @@ public:
         return this->roomNumber;
     }
     
+    void setCheckInDate(Date checkInDate) {
+       
+        this->checkInDate = checkInDate;
+        
+    }
 
+    void setCheckOutDate(Date checkOutDate) {
+       
+        this->checkOutDate = checkOutDate;
+        
+    }
     
+    void setInfo(Information  info[4]) {
+        for (int i = 0; i < 4; i++) {
+            this->info[i] = info[i];
+        }
+        
+    }
     
+    void setRoomNumber(int roomNumber) {
+        
+        if (roomNumber<1 || roomNumber>20){
+            return;
+        }
+       
+        this->roomNumber = roomNumber;
+        
+    }
     
-    
-    
-}
+};
 
 
