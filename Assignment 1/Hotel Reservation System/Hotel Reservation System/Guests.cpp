@@ -22,6 +22,10 @@ private:
     
 public:
     
+    Guests(){
+    
+    }
+    
     Guests (Date checkInDate, Date checkOutDate, Information info[4], int roomNumber){
         
         this->setCheckInDate(checkInDate);
