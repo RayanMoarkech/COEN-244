@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	char string1[] = "pencil";
+
+	vowelcheck(string1);
+
+	cout << "The new word is: " << string1;
+	return 0;
+}
+
+void vowelcheck(char string1[])
+{
+	for (int j = 0; j < string1.size; j++)
+	{
+		if ((string1[j] == 'a') | (string1[j] == 'e') | (string1[j] == 'i') | (string1[j] == 'o') | (string1[j] == 'u'));
+		{
+			for (int i = string1.size - 1; i > j; i--)
+			{
+				swap(string1[j], string1[i]);
+
+			}
+			return string1;
+
+
+
+		}
+	}
+
+}
