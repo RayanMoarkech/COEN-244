@@ -2,6 +2,8 @@
 
 using namespace std;
 
+void vowelcheck(char string1[]);
+
 int main()
 {
 
@@ -15,18 +17,15 @@ int main()
 
 void vowelcheck(char string1[])
 {
-	for (int j = 0; j < string1.size; j++)
+	for (int j = 0; j < sizeof(string1); j++)
 	{
 		if ((string1[j] == 'a') | (string1[j] == 'e') | (string1[j] == 'i') | (string1[j] == 'o') | (string1[j] == 'u'));
 		{
-			for (int i = string1.size - 1; i > j; i--)
+			for (int i = sizeof(string1) - 1; i > j; i--)
 			{
 				swap(string1[j], string1[i]);
 
 			}
-			return string1;
-
-
 
 		}
 	}
